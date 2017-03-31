@@ -1,0 +1,57 @@
+body,h1,h2,h3,h4,h5,h6,hr,
+p,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+button,
+input,
+textarea,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置默认字体 */
+/*自定义字体*/
+@font-face{
+	font-family: Raleway-Italic;
+	src:url('../fonts/Raleway-Italic.ttf');
+}
+@font-face{
+	font-family: Raleway-Regular;
+	src:url('../fonts/Raleway-Regular.ttf');
+}
+@font-face{
+	font-family: Raleway-Bold;
+	src:url('../fonts/Raleway-Bold.ttf');
+}
+@font-face{
+	font-family: ProximaNovaCond-Regular;
+	src:url('../fonts/ProximaNovaCond-Regular.otf');
+}
+@font-face{
+	font-family: ProximaNova-Semibold;
+	src:url('../fonts/ProximaNova-Semibold.otf');
+}
+body,button, input, select, textarea { /* for ie */ /*font: 16px/1 Raleway-Regular, Raleway-Italic,  Raleway-Bold, ProximaNovaCond-Regular, ProximaNova-Semibold,Tahoma, Helvetica, Arial, "宋体", sans-serif;*/ font: 16px/1 Raleway-Regular, Raleway-Italic, Raleway-Bold, ProximaNovaCond-Regular, ProximaNova-Semibold, "\5b8b\4f53", Microsoft YaHei, Tahoma, Helvetica, Arial, sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */}
+ul, ol { list-style: none; }/* 重置文本格式元素 */
+
+a { text-decoration: none; }a:hover { text-decoration: underline; }
+
+/* 重置表格元素 */table { border-collapse: collapse; border-spacing: 0;}
+
+/* 重置 hr */hr { border: none; height: 1px;}
+
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */html { overflow-y: scroll; }
+
+fieldset, img { border: none; }
+
+.clear-fix{*zoom:1}
+.clear-fix:before,
+.clear-fix:after{display:table;content:""}
+.clear-fix:after{clear:both}
+
