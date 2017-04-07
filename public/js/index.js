@@ -1,4 +1,5 @@
 (function($){
+	console.log('首页');
 	//首页banner滚动
 	$(".J_topbannerslide").slide({
 		mainCell: ".bd ul",
@@ -32,12 +33,9 @@
 		$(this).find(".des").animate({bottom:'-127px'},'normal')
 	});
 	
-	$(".box1 .title").click(function() {
-		var _index = $(".box1 .title").index($(this));
-		$(this).addClass('cur').siblings().removeClass('cur');
-		$(".products-table-box ul").eq(_index).show().siblings().hide();
-	});
-
-	
-
+	// $(".box1 .title").click(function() {
+	// 	var _index = $(".box1 .title").index($(this));
+	// 	$(this).addClass('cur').siblings().removeClass('cur');
+	// 	$(".products-table-box ul").eq(_index).show().siblings().hide();
+	// });
 })(jQuery)

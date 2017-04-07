@@ -24,22 +24,20 @@
 					</div>
 					<div class="txt-box">
 						<p class="title">Shopping Cart</p>
-						<p class="count"><span>10</span> item(s) - <span class="color-red">$1,000.00</span></p>
 					</div>
 				</div>
 				<div class="nav-box">
 	                <ul>
-	                    <li class="cur"><a href="#">Home</a></li>
-	                    <li><a href="#">About</a></li>
-	                    <li><a href="#">Services</a></li>
-	                    <li><a href="#">Products</a></li>
-	                    <li><a href="#">Blog</a></li>
-	                    <li><a href="#">Contacts</a></li>
+	                    <li class="cur"><a href="#">HOME</a></li>
+	                    <li><a href="#">PRODUCTS</a></li>
+	                    <li><a href="#">ABOUT US</a></li>
+	                    <li><a href="#">CONTACT US</a></li>
 	                </ul>
 				</div>
 			</div>
 		</div>
 	</div>
+	{{include ("views/"+navTag+".xtpl")}}
 	<div class="footer">
 	    <div class="width-1180" style="text-align:center;">
 	        <img src="img/footer_jf.jpg">
@@ -51,22 +49,16 @@
 	                    <h2>Quick Links</h2>
 	                    <hr>
 	                    <a href="">Home</a>
+	                    <a href="">Products</a>
 	                    <a href="">About Us</a>
-	                    <a href="">Our Products</a>
-	                    <a href="">Organic Ingredients</a>
-	                    <a href="">What New!</a>
-	                    <a href="">Best Sellers</a>
-	                    <a href="">New Arrivals</a>
-	                    <a href="">Popular</a>
 	                </li>
 	                <li>
-	                    <h2>My Account</h2>
+	                    <h2>Products</h2>
 	                    <hr>
-	                    <a href="">My orders</a>
-	                    <a href="">My merchandise returns</a>
-	                    <a href="">My credit slips</a>
-	                    <a href="">My addresses</a>
-	                    <a href="">My personal info</a>
+	                    <a href="">Outdoor</a>
+	                    <a href="">Indoor</a>
+	                    <a href="">Pets</a>
+	                    <a href="">Storage</a>
 	                    <div class="fenxiang-box">
 	                        <img src="img/fenxiang.jpg">
 	                    </div>
@@ -79,24 +71,18 @@
 	                            <strong>Living Expreess</strong>
 	                        </p>
 	                        <p>
-	                            Loren Street no 5261
+	                            NO.105 BINKANG ROAD,
 	                        </p>
 	                        <p>
-	                            Near wall treet optisiho dollar
-	                        </p>
-	                        <p>
-	                            Smt nonumy - 334687
+	                            BINGJIANG ZONG
 	                        </p>
 	                    </div>
 	                    <div class="contact-box">
 	                        <p>
-	                            <i class="phone"></i>+1234567890
+	                            <i class="phone"></i>+1805-5307074
 	                        </p>
 	                        <p>
-	                            <i class="fax"></i>+1234567890
-	                        </p>
-	                        <p>
-	                            <i class="email"></i>info@sitename.com
+	                            <i class="email"></i>services@livingexpresspatio.com
 	                        </p>
 	                    </div>
 	                </li>
@@ -128,5 +114,6 @@
 	        </div>
 	    </div>
 	</div>
+	<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>

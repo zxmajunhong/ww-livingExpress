@@ -111,6 +111,7 @@ body {
 	font-size: 17px;
 	color: #e54f1f;
 	padding: 0 0 5px 0;
+	line-height: 40px;
 }
 
 .txt-box .count {
@@ -136,7 +137,7 @@ body {
 }
 
 .nav-box ul li {
-	width: 193px;
+	width: 291px;
 	height: 50px;
 	line-height: 50px;
 	float: left;
@@ -316,20 +317,24 @@ body {
 	height: 1110px;
 }
 
-.box1 .title {
+/*.box1 .title {
 	cursor: pointer;
 }
 
 .box1 .title:hover {
 	color: #e54f1f;
-}
+}*/
 
-.box1 .t1 {
+/*.box1 .t1 {
 	width: 243px;
 }
 
 .box1 .t2 {
 	width: 293px;
+}*/
+
+.box1 .title {
+	width: 150px;
 }
 
 .box1 .title-fenge {
@@ -345,27 +350,32 @@ body {
 
 .products-table-box ul {
 	margin: 0 -35px 0 0;
-	display: none;
 }
 
 .products-table-box ul li {
 	float: left;
-	width: 370px;
-	height: 433px;
+	width: 265px;
+	height: 328px;
 	margin: 27px 35px 0 0;
 	position: relative;
 	overflow: hidden;
+	border: 1px solid #ccc;
+}
+
+.products-table-box ul li .pic img {
+	width: 265px;
+	height: 328px;
 }
 
 .products-table-box ul li .des {
-	width: 370px;
+	width: 265px;
 	height: 83px;
 	position: absolute;
 	bottom: -83px;
 }
 
 .products-table-box ul li .des .des-txt {
-	width: 302px;
+	width: 265px;
 	height: 83px;
 	line-height: 83px;
 	text-align: center;

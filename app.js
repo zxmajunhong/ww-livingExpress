@@ -20,10 +20,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //路由
 router.get('/:html',function(req,res){
-	var _html = req.params.html || "";
+	var _html = req.params.html || "index";
 	var navTag = _html.replace(".html","");
 	res.render('layout/base',{
-		title:"沃安沃",
+		title:"LivingExpress",
 		navTag:navTag
 	},function(err,html){
 		// fs.writeFile("public/"+_html,html,function(werr){

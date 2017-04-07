@@ -1,0 +1,294 @@
+<div class="main clear-fix">
+  <div class="banner-box J_topbannerslide">
+    <div class="bd">
+      <ul>
+        <li><img src="img/top_banner/banner1.jpg"></li>
+        <li><img src="img/top_banner/banner2.jpg"></li>
+        <li><img src="img/top_banner/banner3.jpg"></li>
+      </ul>
+    </div>
+    <div class="hd">
+      <ul>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+      </ul>
+    </div>
+  </div>
+  <div class="width-1180">
+    <div class="xilie-box">
+      <ul>
+        <li>
+          <a href="">
+            <img src="img/xilie/xilie1.png">
+            <span class="cover c1"></span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/xilie/xilie2.png">
+            <span class="cover c2"></span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/xilie/xilie3.png">
+            <span class="cover c3"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="fenge-box"></div>
+    <div class="products-box">
+      <div class="title-box">
+        <span class="title" style="width:150px;">
+          <span class="txt">
+              Outdoor
+          </span>
+        </span>
+      </div>
+      <div class="products-table-box">
+        <ul class="clear-fix">
+          <li>
+            <div class="li-box">
+              <div class="pic">
+                <a href="#">
+                  <img src="img/home/outdoor/p1.jpg">
+                </a>
+              </div>
+              <div class="des">
+                <span class="des-txt">Consectetur Adipiscing</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="li-box">
+              <div class="pic">
+                <a href="#">
+                  <img src="img/home/outdoor/p2.jpg">
+                </a>
+              </div>
+              <div class="des">
+                <span class="des-txt">Tempor Incididunt</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="li-box">
+              <div class="pic">
+                <a href="#">
+                  <img src="img/home/outdoor/p3.jpg">
+                </a>
+              </div>
+              <div class="des">
+                <span class="des-txt">Commodo Consequat</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="li-box">
+              <div class="pic">
+                <a href="#">
+                  <img src="img/home/outdoor/p4.jpg">
+                </a>
+              </div>
+              <div class="des">
+                <span class="des-txt">Consectetur Adipiscing</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!--<div class="prev-next">
+        <a class="prev" href="#"></a>
+        <a class="next" href="#"></a>
+      </div>-->
+    </div>
+    <div class="fenge-box"></div>
+    <div class="products-box">
+      <div class="title-box">
+        <span class="title" style="width:120px;">
+          <span class="txt">
+              Indoor
+          </span>
+        </span>
+      </div>
+      <div class="products-table-box">
+        <ul class="clear-fix">
+          <li>
+            <div class="li-box">
+              <div class="pic">
+                <a href="#">
+                  <img src="img/home/indoor/p1.jpg">
+                </a>
+              </div>
+              <div class="des">
+                <span class="des-txt">Consectetur Adipiscing</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="li-box">
+              <div class="pic">
+                <a href="#">
+                  <img src="img/home/indoor/p2.jpg">
+                </a>
+              </div>
+              <div class="des">
+                <span class="des-txt">Tempor Incididunt</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="li-box">
+              <div class="pic">
+                <a href="#">
+                  <img src="img/home/indoor/p3.jpg">
+                </a>
+              </div>
+              <div class="des">
+                <span class="des-txt">Commodo Consequat</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="li-box">
+              <div class="pic">
+                <a href="#">
+                  <img src="img/home/indoor/p4.jpg">
+                </a>
+              </div>
+              <div class="des">
+                <span class="des-txt">Consectetur Adipiscing</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="fenge-box"></div>
+    <div class="products-box">
+      <div class="title-box">
+        <span class="title" style="width:100px;">
+          <span class="txt">
+              Pets
+          </span>
+        </span>
+      </div>
+      <div class="products-table-box">
+        <ul class="clear-fix">
+          <li>
+            <div class="li-box">
+              <div class="pic">
+                <a href="#">
+                  <img src="img/home/outdoor/p1.jpg">
+                </a>
+              </div>
+              <div class="des">
+                <span class="des-txt">Consectetur Adipiscing</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="li-box">
+              <div class="pic">
+                <a href="#">
+                  <img src="img/home/outdoor/p2.jpg">
+                </a>
+              </div>
+              <div class="des">
+                <span class="des-txt">Tempor Incididunt</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="li-box">
+              <div class="pic">
+                <a href="#">
+                  <img src="img/home/outdoor/p3.jpg">
+                </a>
+              </div>
+              <div class="des">
+                <span class="des-txt">Commodo Consequat</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="li-box">
+              <div class="pic">
+                <a href="#">
+                  <img src="img/home/outdoor/p4.jpg">
+                </a>
+              </div>
+              <div class="des">
+                <span class="des-txt">Consectetur Adipiscing</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="fenge-box"></div>
+    <div class="products-box">
+      <div class="title-box">
+        <span class="title" style="width:140px;">
+          <span class="txt">
+              Storage
+          </span>
+        </span>
+      </div>
+      <div class="products-table-box">
+        <ul class="clear-fix">
+          <li>
+            <div class="li-box">
+              <div class="pic">
+                <a href="#">
+                  <img src="img/home/outdoor/p1.jpg">
+                </a>
+              </div>
+              <div class="des">
+                <span class="des-txt">Consectetur Adipiscing</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="li-box">
+              <div class="pic">
+                <a href="#">
+                  <img src="img/home/outdoor/p2.jpg">
+                </a>
+              </div>
+              <div class="des">
+                <span class="des-txt">Tempor Incididunt</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="li-box">
+              <div class="pic">
+                <a href="#">
+                  <img src="img/home/outdoor/p3.jpg">
+                </a>
+              </div>
+              <div class="des">
+                <span class="des-txt">Commodo Consequat</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="li-box">
+              <div class="pic">
+                <a href="#">
+                  <img src="img/home/outdoor/p4.jpg">
+                </a>
+              </div>
+              <div class="des">
+                <span class="des-txt">Consectetur Adipiscing</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
