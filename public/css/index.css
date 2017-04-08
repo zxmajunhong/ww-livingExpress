@@ -185,6 +185,13 @@ body {
 	text-decoration: none;
 }
 
+.nav-box ul.index #home,
+.nav-box ul.products #products,
+.nav-box ul.about #about,
+.nav-box ul.contract #contract {
+	background-color: #e54f1f;
+}
+
 .main .banner-box {
 	width: 1600px;
 	height: 800px;
@@ -286,7 +293,7 @@ body {
 }
 
 .products-box {
-	margin: 20px 0 0 0;
+	margin: 20px 0 50px 0;
 }
 
 .products-box .title-box .cur {
@@ -354,42 +361,31 @@ body {
 
 .products-table-box ul li {
 	float: left;
-	width: 265px;
+	width: 285px;
 	height: 328px;
-	margin: 27px 35px 0 0;
+	margin: 20px 15px 0 0;
 	position: relative;
 	overflow: hidden;
 	border: 1px solid #ccc;
 }
 
 .products-table-box ul li .pic img {
-	width: 265px;
-	height: 328px;
+	width: 285px;
+	height: 200px;
 }
 
 .products-table-box ul li .des {
-	width: 265px;
+	width: 285px;
 	height: 83px;
-	position: absolute;
-	bottom: -83px;
 }
 
-.products-table-box ul li .des .des-txt {
-	width: 265px;
-	height: 83px;
-	line-height: 83px;
-	text-align: center;
-	color: #fff;
-	font-size: 25px;
-	background-color: #000;
-	float: left;
-	opacity: 0.6;
-	/* IE 4-9 */  
-    filter:alpha(opacity=60);  
-    /*This works in IE 8 & 9 too*/  
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";  
-    /*IE4-IE9*/  
-    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=60);  
+.products-table-box ul li .des > p {
+	padding: 0 10px;
+}
+
+.products-table-box ul li .des .p-price {
+	font-size: 20px;
+	color: #ff4c4c;
 }
 
 .products-table-box ul li .des .des-shoplink {
@@ -651,4 +647,36 @@ body {
 	margin: 0 85px 0 0;
 }
 
+/*关于我们页面样式*/
+.about-main {
+	font-size: 20px;
+	padding-top: 50px;
+}
 
+.about-main .p1 {
+	line-height: 30px;
+}
+
+.about-main .p2 {
+	line-height: 28px;
+	text-indent: 60px;
+}
+
+.about-main .c-img {
+	display: block;
+	width: 100%;
+}
+
+.about-main .address {
+	line-height: 28px;
+}
+
+/*联系我们页面样式*/
+.contract-main {
+	font-size: 28px;
+	padding-top: 60px;
+}
+
+.contract-main .each-c-area {
+	margin: 0 0 60px 0;
+}

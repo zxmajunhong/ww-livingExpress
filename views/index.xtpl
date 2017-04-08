@@ -2,9 +2,9 @@
   <div class="banner-box J_topbannerslide">
     <div class="bd">
       <ul>
-        <li><img src="img/top_banner/banner1.jpg"></li>
-        <li><img src="img/top_banner/banner2.jpg"></li>
-        <li><img src="img/top_banner/banner3.jpg"></li>
+        <li><img src="img/top_banner/H1.jpg"></li>
+        <li><img src="img/top_banner/H2.jpg"></li>
+        <li><img src="img/top_banner/H3.jpg"></li>
       </ul>
     </div>
     <div class="hd">
@@ -57,7 +57,8 @@
                 </a>
               </div>
               <div class="des">
-                <span class="des-txt">Consectetur Adipiscing</span>
+                <p class="p-name">OUTDOOR1</p>
+                <p class="p-price">￥39.00</p>
               </div>
             </div>
           </li>
@@ -69,7 +70,8 @@
                 </a>
               </div>
               <div class="des">
-                <span class="des-txt">Tempor Incididunt</span>
+                <p class="p-name">OUTDOOR2</p>
+                <p class="p-price">￥39.00</p>
               </div>
             </div>
           </li>
@@ -81,7 +83,8 @@
                 </a>
               </div>
               <div class="des">
-                <span class="des-txt">Commodo Consequat</span>
+                <p class="p-name">OUTDOOR3</p>
+                <p class="p-price">￥39.00</p>
               </div>
             </div>
           </li>
@@ -93,7 +96,8 @@
                 </a>
               </div>
               <div class="des">
-                <span class="des-txt">Consectetur Adipiscing</span>
+                <p class="p-name">OUTDOOR4</p>
+                <p class="p-price">￥39.00</p>
               </div>
             </div>
           </li>
@@ -123,7 +127,8 @@
                 </a>
               </div>
               <div class="des">
-                <span class="des-txt">Consectetur Adipiscing</span>
+                <p class="p-name">INDOOR1</p>
+                <p class="p-price">￥39.00</p>
               </div>
             </div>
           </li>
@@ -135,7 +140,8 @@
                 </a>
               </div>
               <div class="des">
-                <span class="des-txt">Tempor Incididunt</span>
+                <p class="p-name">INDOOR2</p>
+                <p class="p-price">￥39.00</p>
               </div>
             </div>
           </li>
@@ -147,7 +153,8 @@
                 </a>
               </div>
               <div class="des">
-                <span class="des-txt">Commodo Consequat</span>
+                <p class="p-name">INDOOR3</p>
+                <p class="p-price">￥39.00</p>
               </div>
             </div>
           </li>
@@ -159,7 +166,8 @@
                 </a>
               </div>
               <div class="des">
-                <span class="des-txt">Consectetur Adipiscing</span>
+                <p class="p-name">INDOOR4</p>
+                <p class="p-price">￥39.00</p>
               </div>
             </div>
           </li>
@@ -181,11 +189,12 @@
             <div class="li-box">
               <div class="pic">
                 <a href="#">
-                  <img src="img/home/outdoor/p1.jpg">
+                  <img src="img/home/pets/p1.jpg">
                 </a>
               </div>
               <div class="des">
-                <span class="des-txt">Consectetur Adipiscing</span>
+                <p class="p-name">PETS1</p>
+                <p class="p-price">￥39.00</p>
               </div>
             </div>
           </li>
@@ -193,11 +202,12 @@
             <div class="li-box">
               <div class="pic">
                 <a href="#">
-                  <img src="img/home/outdoor/p2.jpg">
+                  <img src="img/home/pets/p2.jpg">
                 </a>
               </div>
               <div class="des">
-                <span class="des-txt">Tempor Incididunt</span>
+                <p class="p-name">PETS2</p>
+                <p class="p-price">￥39.00</p>
               </div>
             </div>
           </li>
@@ -205,11 +215,12 @@
             <div class="li-box">
               <div class="pic">
                 <a href="#">
-                  <img src="img/home/outdoor/p3.jpg">
+                  <img src="img/home/pets/p3.jpg">
                 </a>
               </div>
               <div class="des">
-                <span class="des-txt">Commodo Consequat</span>
+                <p class="p-name">PETS3</p>
+                <p class="p-price">￥39.00</p>
               </div>
             </div>
           </li>
@@ -217,11 +228,12 @@
             <div class="li-box">
               <div class="pic">
                 <a href="#">
-                  <img src="img/home/outdoor/p4.jpg">
+                  <img src="img/home/pets/p4.jpg">
                 </a>
               </div>
               <div class="des">
-                <span class="des-txt">Consectetur Adipiscing</span>
+                <p class="p-name">PETS4</p>
+                <p class="p-price">￥39.00</p>
               </div>
             </div>
           </li>
@@ -243,11 +255,12 @@
             <div class="li-box">
               <div class="pic">
                 <a href="#">
-                  <img src="img/home/outdoor/p1.jpg">
+                  <img src="img/home/storage/p1.jpg">
                 </a>
               </div>
               <div class="des">
-                <span class="des-txt">Consectetur Adipiscing</span>
+                <p class="p-name">STORAGE1</p>
+                <p class="p-price">￥39.00</p>
               </div>
             </div>
           </li>
@@ -255,35 +268,12 @@
             <div class="li-box">
               <div class="pic">
                 <a href="#">
-                  <img src="img/home/outdoor/p2.jpg">
+                  <img src="img/home/storage/p2.jpg">
                 </a>
               </div>
               <div class="des">
-                <span class="des-txt">Tempor Incididunt</span>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="li-box">
-              <div class="pic">
-                <a href="#">
-                  <img src="img/home/outdoor/p3.jpg">
-                </a>
-              </div>
-              <div class="des">
-                <span class="des-txt">Commodo Consequat</span>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="li-box">
-              <div class="pic">
-                <a href="#">
-                  <img src="img/home/outdoor/p4.jpg">
-                </a>
-              </div>
-              <div class="des">
-                <span class="des-txt">Consectetur Adipiscing</span>
+                <p class="p-name">STORAGE1</p>
+                <p class="p-price">￥39.00</p>
               </div>
             </div>
           </li>
