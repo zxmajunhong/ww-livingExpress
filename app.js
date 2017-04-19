@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 })*/
 
 //路由
-router.get('/:html',function(req,res){
+router.get(/.html$/,function(req,res){
 	var _html = req.params.html || "index";
 	var navTag = _html.replace(".html","");
 	res.render('layout/base',{
@@ -34,6 +34,8 @@ router.get('/:html',function(req,res){
 		res.send(html);
 	});
 });
+
+
 
 app.use('/',router);
 
