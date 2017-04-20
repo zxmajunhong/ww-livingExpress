@@ -19,9 +19,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 })*/
 
 //路由
-router.get(/.html$/,function(req,res){
+router.get(/.*html$/,function(req,res){
+	console.log('进入');
 	var _html = req.params.html || "index";
 	var navTag = _html.replace(".html","");
+	console.log(navTag);
 	res.render('layout/base',{
 		title:"LivingExpress",
 		navTag:navTag
