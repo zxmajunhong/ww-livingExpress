@@ -20,9 +20,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //路由
 router.get(/.*html$/,function(req,res){
-	console.log('进入');
+	console.log('进入',req.url);
 	var _html = req.params.html || "index";
-	var navTag = _html.replace(".html","");
+	var navTag = req.url.replace(".html","").replace('/','');
 	console.log(navTag);
 	res.render('layout/base',{
 		title:"LivingExpress",
@@ -37,7 +37,20 @@ router.get(/.*html$/,function(req,res){
 	});
 });
 
-
+router.get(/\b(Outdoor|Indoor|Pets|Storage)\b/,function(req,res){
+	console.log('进入2',req.url);
+	var navTag = req.url.replace('/','');
+	var jsonData = JSON.parse(fs.readFileSync('./jsonfile/products.json'));
+	var productData = jsonData[navTag] || [];
+	res.render('layout/base',{
+		title:navTag,
+		navTag:'products',
+		productData:productData
+	},function(err,html){
+		res.send(html);
+	})
+	console.log(jsonData);
+})
 
 app.use('/',router);
 

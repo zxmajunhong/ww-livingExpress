@@ -1,3 +1,31 @@
-<div class="products-main">
+<div class="products-main main" style="padding:30px 0">
+	<div class="width-1180">
+		<div class="products-box">
+			<span class="title" style="width:150px;">
+	          <span class="txt">
+	              {{title}}
+	          </span>
+	        </span>
+		</div>
+		<div class="products-table-box">
+			<ul class="clear-fix">
+				{{#each (productData)}}
+				<li>
+		            <div class="li-box">
+		              <div class="pic">
+		                <a href="#">
+		                  <img src="{{url}}">
+		                </a>
+		              </div>
+		              <div class="des">
+		                <p class="p-name">{{name}}</p>
+		                <p class="p-price">{{price}}</p>
+		              </div>
+		            </div>
+	          	</li>
+	          	{{/each}}
+			</ul>
+		</div>
+	</div>
 	
 </div>

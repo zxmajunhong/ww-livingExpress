@@ -192,6 +192,25 @@ body {
 	background-color: #e54f1f;
 }
 
+.nav-box ul li .child-menu {
+	display: none;
+	background-color: #6e6c7a;
+}
+
+.nav-box ul li:hover .child-menu {
+	display: block;
+}
+
+.nav-box ul li .child-menu > a {
+	display: block;
+	height: 50px;
+	border-top: 1px outset #8a8895;
+}
+
+.nav-box ul li .child-menu > a:hover {
+	background-color: #e54f1f;
+}
+
 .main .banner-box {
 	width: 1600px;
 	height: 800px;
