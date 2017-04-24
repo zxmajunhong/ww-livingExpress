@@ -3,13 +3,21 @@
 		<div class="top-info">
 			<div class="left-img">
 				<div class="big-img">
-					<img src="" alt="">
+					<ul class="img-list">
+						{{#each (data.imgList)}}
+						<li>
+							<img src="{{this}}" alt="">
+						</li>
+						{{/each}}
+					</ul>
 				</div>
 			</div>
-			<div class="right-info"></div>
+			<div class="right-info">
+				{{{data.attribute}}}
+			</div>
 		</div>
 		<div class="description">
-			
+			{{{data.description}}}
 		</div>
 	</div>
 </div>

@@ -5,27 +5,27 @@
 	          <span class="txt">
 	              {{title}}
 	          </span>
-	        </span>
+			</span>
 		</div>
 		<div class="products-table-box">
 			<ul class="clear-fix">
 				{{#each (productData)}}
 				<li>
-		            <div class="li-box">
-		              <div class="pic">
-		                <a href="#">
-		                  <img src="{{url}}">
-		                </a>
-		              </div>
-		              <div class="des">
-		                <p class="p-name">{{name}}</p>
-		                <p class="p-price">{{price}}</p>
-		              </div>
-		            </div>
-	          	</li>
-	          	{{/each}}
+					<div class="li-box">
+						<div class="pic">
+							<a href="#">
+								<img src="{{url}}">
+							</a>
+						</div>
+						<div class="des">
+							<p class="p-name">{{name}}</p>
+							<p class="p-price">{{price}}</p>
+						</div>
+					</div>
+				</li>
+				{{/each}}
 			</ul>
 		</div>
 	</div>
-	
+
 </div>
