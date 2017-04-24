@@ -699,3 +699,10 @@ body {
 .contract-main .each-c-area {
 	margin: 0 0 60px 0;
 }
+
+/*详情页面*/
+.products-detail .left-img {
+	float: left;
+	width: 500px;
+	height: 500px;
+}

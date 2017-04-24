@@ -37,6 +37,7 @@ router.get(/.*html$/,function(req,res){
 	});
 });
 
+//每个列表的产品列表
 router.get(/\b(Outdoor|Indoor|Pets|Storage)\b/,function(req,res){
 	console.log('进入2',req.url);
 	var navTag = req.url.replace('/','');
@@ -50,6 +51,21 @@ router.get(/\b(Outdoor|Indoor|Pets|Storage)\b/,function(req,res){
 		res.send(html);
 	})
 	console.log(jsonData);
+});
+
+//产品详情页
+router.get('/detail/:id',function(req,res){
+	console.log('进入详情',req.params.id);
+	var jsonData = JSON.parse(fs.readFileSync('./jsonfile/productDetails.json'));
+	var detailData = jsonData[req.params.id] || {};
+	console.log(detailData);
+	res.render('layout/base',{
+		title:'详情',
+		navTag:'productdetail',
+		detailData:detailData
+	},function(err,html){
+		res.send(html);
+	});
 })
 
 app.use('/',router);

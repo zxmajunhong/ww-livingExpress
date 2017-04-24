@@ -3,10 +3,10 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>{{title || "livingExpress"}}</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/index.css">
-	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="js/slide.js"></script>
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/index.css">
+	<script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="/js/slide.js"></script>
 </head>
 <body>
 	<div class="head">
@@ -15,12 +15,12 @@
 			</div>
 			<div class="head-bottom">
 				<div class="logo-box">
-					<img src="img/logo.png">
+					<img src="/img/logo.png">
 				</div>
 				<div class="shopcart-box">
 					<div class="ico-box">
-						<a href="#"><img src="img/shopcart.png"></a>
-						<a href="#"><img src="img/search.png"></a>
+						<a href="#"><img src="/img/shopcart.png"></a>
+						<a href="#"><img src="/img/search.png"></a>
 					</div>
 					<div class="txt-box">
 						<p class="title">Shopping Cart</p>
@@ -28,7 +28,7 @@
 				</div>
 				<div class="nav-box">
 	                <ul class="{{navTag}}">
-	                    <li id="home"><a href="index.html">HOME</a></li>
+	                    <li id="home"><a href="/index.html">HOME</a></li>
 	                    <li id="products">
 	                    	PRODUCTS
 	                    	<div class="child-menu">
@@ -38,8 +38,8 @@
 			                    <a href="">Storage</a>
 	                    	</div>
 	                    </li>
-	                    <li id="about"><a href="about.html">ABOUT US</a></li>
-	                    <li id="contract"><a href="contract.html">CONTACT US</a></li>
+	                    <li id="about"><a href="/about.html">ABOUT US</a></li>
+	                    <li id="contract"><a href="/contract.html">CONTACT US</a></li>
 	                </ul>
 				</div>
 			</div>
@@ -48,7 +48,7 @@
 	{{include ("views/"+navTag+".xtpl")}}
 	<div class="footer">
 	    <div class="width-1180" style="text-align:center;">
-	        <img src="img/footer_jf.jpg">
+	        <img src="/img/footer_jf.jpg">
 	    </div>
 	    <div class="footer-link">
 	        <div class="width-1180">
@@ -68,7 +68,7 @@
 	                    <a href="">Pets</a>
 	                    <a href="">Storage</a>
 	                    <div class="fenxiang-box">
-	                        <img src="img/fenxiang.jpg">
+	                        <img src="/img/fenxiang.jpg">
 	                    </div>
 	                </li>
 	                <li>
@@ -103,7 +103,7 @@
 	                    </div>
 	                    <input type="button" class="ipt-btn" value="Subscribe">
 	                    <div class="logo-box">
-	                        <img src="img/logo.png">
+	                        <img src="/img/logo.png">
 	                    </div>
 	                </li>
 	            </ul>
@@ -117,11 +117,11 @@
 	                </span>
 	            </div>
 	            <div class="right">
-	                <img src="img/footer_card.png">
+	                <img src="/img/footer_card.png">
 	            </div>
 	        </div>
 	    </div>
 	</div>
-	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="/js/index.js"></script>
 </body>
 </html>

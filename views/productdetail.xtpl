@@ -1,23 +1,29 @@
-<div class="products-detail">
+<div class="products-detail" style="margin-top:50px;">
 	<div class="width-1180">
 		<div class="top-info">
 			<div class="left-img">
 				<div class="big-img">
 					<ul class="img-list">
-						{{#each (data.imgList)}}
+						{{#each (detailData.imgList)}}
 						<li>
 							<img src="{{this}}" alt="">
 						</li>
 						{{/each}}
 					</ul>
 				</div>
+				<ul class="hd">
+					{{#each (detailData.imgList)}}
+						<li>{{xindex}}</li>
+					{{/each}}
+				</ul>
 			</div>
 			<div class="right-info">
-				{{{data.attribute}}}
+				{{{detailData.attribute}}}
 			</div>
 		</div>
 		<div class="description">
-			{{{data.description}}}
+			{{{detailData.description}}}
 		</div>
 	</div>
 </div>
+<script src="/js/details.js"></script>
