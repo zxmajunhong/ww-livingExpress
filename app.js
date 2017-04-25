@@ -3,8 +3,11 @@ var router = express.Router();
 var path = require('path');
 var xtpl = require('xtpl');
 var fs= require('fs');
+var multiparty = require('multiparty');
+var util = require('util');
 
 var app = express();
+var pid = 2; //全局产品id;
 
 //视图模版
 app.set('views', path.join(__dirname, 'views'));
@@ -73,6 +76,32 @@ router.get('/edit',function(req,res){
 	console.log('进入编辑');
 	res.render('edit',{},function(err,html){
 		res.send(html);
+	})
+})
+
+//上传文件
+router.post('/uploadfile',function(req,res){
+	var form = new multiparty.Form({uploadDir:'./public/img/temp'});
+	var resFileUrlArry = [];
+	form.parse(req,function(err,fields,files){
+		debugger;
+		var reFolder = 'public/img/pdetail/'+pid; //当前上传文件最终要存放的文件夹地址
+		console.log(reFolder);
+		if(!fs.existsSync(reFolder)){
+			fs.mkdirSync(reFolder);
+		}
+		//该文件夹下所存在的文件数量
+		var existsFilesLength = fs.readdirSync(reFolder).length || 0;
+		files.files.forEach(function(file,index,array){
+			console.log(file.path);
+			console.log(file.originalFilename);
+			var existsFils = fs.readdirSync(reFolder);
+			var reFilePath = reFolder+'/p'+(index+existsFilesLength)+'.jpg'; //修改后的文件地址
+			fs.renameSync(file.path,reFilePath);
+			resFileUrlArry.push(reFilePath);
+		})
+		console.log('输出的文件地址',resFileUrlArry);
+		res.json({path:resFileUrlArry});
 	})
 })
 

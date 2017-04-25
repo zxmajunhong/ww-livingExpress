@@ -101,11 +101,11 @@
       <span class="title">选择图片：</span>
       <div class="right-content">
         <input id="uploadfile" type="file" multiple="multiple">
-        <button type="button">确认上传</button>&nbsp;<span style="color:orangered">选择文件之后需要点击确认上传来完成文件上传</span>
+        <button id="uploadsure" type="button">确认上传</button>&nbsp;<span style="color:orangered">选择文件之后需要点击确认上传来完成文件上传</span>
       </div>
     </label>
     <div class="img-list">
-      <div class="u-img">
+      <!--<div class="u-img">
         <img src="/img/home/outdoor/p1.jpg" alt="">
         <input name="img" type="radio">
       </div>
@@ -116,7 +116,7 @@
       <div class="u-img">
         <img src="/img/home/outdoor/p3.jpg" alt="">
         <input name="img" type="radio">
-      </div>
+      </div>-->
     </div>
     <label class="line more-line">
       <span class="title">商品属性：</span>
@@ -134,5 +134,44 @@
 <script>
   var ueAttribute = UE.getEditor('editor-attribute');
   var ueDesc = UE.getEditor('editor-description');
+</script>
+<script>
+  $(function(){
+    //上传文件 $('.u-img input[name="img"]:checked').siblings('img')
+    $('#uploadsure').click(function(){
+      console.log('确认');
+      var file = document.getElementById('uploadfile').files;
+      console.log(file.length);
+      if(file.length == 0){
+        return;
+      }
+      //新建一个FormData对象
+      var formData = new FormData();
+      //追加文件数据
+      for(var i = 0; i < file.length; i++){
+        formData.append('files',file[i]);
+      }
+      $.ajax({
+        type: 'post',
+        url: '/uploadfile',
+        data: formData,
+        processData: false,
+        contentType: false,
+        success:function(data){
+          if(data.path.length){
+            //成功上传的情况
+            var html = '';
+            data.path.forEach(function(path,index,array){
+              html += '<div class="u-img">'+
+                        '<img src="'+path.replace('public','')+'" >'+
+                        '<input name="img" type="radio" '+(index==0?'checked':'')+' />'+
+                      '</div>';
+            });
+            $('.img-list').append(html);
+          }
+        }
+      })
+    });
+  })
 </script>
 </html>
