@@ -66,6 +66,14 @@ router.get('/detail/:id',function(req,res){
 	},function(err,html){
 		res.send(html);
 	});
+});
+
+//编辑产品
+router.get('/edit',function(req,res){
+	console.log('进入编辑');
+	res.render('edit',{},function(err,html){
+		res.send(html);
+	})
 })
 
 app.use('/',router);

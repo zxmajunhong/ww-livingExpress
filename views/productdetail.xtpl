@@ -1,19 +1,17 @@
 <div class="products-detail" style="margin-top:50px;">
 	<div class="width-1180">
-		<div class="top-info">
+		<div class="top-info clear-fix">
 			<div class="left-img">
-				<div class="big-img">
-					<ul class="img-list">
-						{{#each (detailData.imgList)}}
-						<li>
-							<img src="{{this}}" alt="">
-						</li>
-						{{/each}}
-					</ul>
-				</div>
+				<ul class="img-list">
+					{{#each (detailData.imgList)}}
+					<li>
+						<img src="{{this}}" alt="">
+					</li>
+					{{/each}}
+				</ul>
 				<ul class="hd">
 					{{#each (detailData.imgList)}}
-						<li>{{xindex}}</li>
+					<li></li>
 					{{/each}}
 				</ul>
 			</div>

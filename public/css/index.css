@@ -703,6 +703,49 @@ body {
 /*详情页面*/
 .products-detail .left-img {
 	float: left;
-	width: 500px;
-	height: 500px;
+	width: 600px;
+	height: 600px;
+	position: relative;
+	overflow: hidden;
+}
+
+.products-detail .left-img .img-list {
+	position: relative;
+	z-index: 1;
+}
+
+.products-detail .left-img .img-list li img {
+	width: 600px;
+	height: 600px;
+}
+
+.products-detail .left-img  .hd {
+	position: absolute;
+	z-index: 2;
+	top: 578px;
+}
+
+.products-detail .left-img  .hd li {
+	float: left;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #fff;
+	margin: 0 5px;
+	text-indent: -999px;
+}
+
+.products-detail .left-img  .hd li.on {
+	background-color: #ff4c4c;
+}
+
+.products-detail .right-info {
+	float: left;
+	width: 560px;
+	margin: 0 0 0 20px;
+}
+
+.products-detail .description {
+	padding: 20px 20px 0 20px;
+	margin-bottom: 50px;
 }

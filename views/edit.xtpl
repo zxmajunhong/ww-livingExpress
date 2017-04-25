@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>编辑页面</title>
+  <style>
+   h1 {
+     text-align: center;
+   }
+
+   .width-1180 {
+     width: 1180px;
+     margin: 0 auto;
+   }
+
+   .line {
+     display: block;
+     overflow: hidden;
+     margin-bottom: 20px;
+     height: 28px;
+   }
+   
+   .line.more-line {
+     height: auto;
+   }
+
+   .line .title {
+     float: left;
+     width: 200px;
+     text-align: right;
+   }
+
+   .line select {
+     width: 150px;
+     height: 28px;
+     outline: none;
+     border: 1px solid #dfdfdf;
+     border-radius: 5px;
+   }
+
+   .line .ipt {
+     width: 150px;
+     height: 24px;
+     border-radius: 4px;
+     border: 1px solid #dfdfdf;
+     outline: none;
+     text-indent: 5px;
+   }
+   .img-list {
+     overflow: hidden;
+     padding: 0 100px;
+   }
+
+   .img-list .u-img {
+    float: left;
+    margin: 0 10px 10px 0;
+    text-align: center;
+   }
+
+   .img-list .u-img img {
+     width: 100px;
+     height: 100px;
+     display: block;
+   }
+
+  </style>
+  <script src="/js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.config.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.all.min.js"> </script>
+  <script type="text/javascript" charset="utf-8" src="/ueditor/lang/zh-cn/zh-cn.js"> </script>
+</head>
+<body>
+  <div class="width-1180">
+    <h1>编辑产品列表</h1>
+    <label class="line">
+      <span class="title">选择类别：</span>
+      <div class="right-content">
+        <select id="item-type">
+          <option value="Outdoor">Outdoor</option>
+          <option value="Indoor">Indoor</option>
+          <option value="Pets">Pets</option>
+          <option value="Storage">Storage</option>
+        </select>
+      </div>
+    </label>
+    <label class="line">
+      <span class="title">名称：</span>
+      <div class="right-content">
+        <input class="ipt" type="text" id="ipt-name" value="">
+      </div>
+    </label>
+    <label class="line">
+      <span class="title">价格：</span>
+      <div class="right-content">
+        <input class="ipt" type="text" id="ipt-price" value="">
+      </div>
+    </label>
+    <label class="line">
+      <span class="title">选择图片：</span>
+      <div class="right-content">
+        <input id="uploadfile" type="file" multiple="multiple">
+        <button type="button">确认上传</button>&nbsp;<span style="color:orangered">选择文件之后需要点击确认上传来完成文件上传</span>
+      </div>
+    </label>
+    <div class="img-list">
+      <div class="u-img">
+        <img src="/img/home/outdoor/p1.jpg" alt="">
+        <input name="img" type="radio">
+      </div>
+      <div class="u-img">
+        <img src="/img/home/outdoor/p2.jpg" alt="">
+        <input name="img" type="radio">
+      </div>
+      <div class="u-img">
+        <img src="/img/home/outdoor/p3.jpg" alt="">
+        <input name="img" type="radio">
+      </div>
+    </div>
+    <label class="line more-line">
+      <span class="title">商品属性：</span>
+      <script id="editor-attribute" type="text/plain" style="width:800px;height:400px;float:left"></script>
+    </label>
+    <label class="line more-line">
+      <span class="title">商品描述：</span>
+      <script id="editor-description" type="text/plain" style="width:800px;height:400px;float:left"></script>
+    </label>
+    <div class="btn-box" style="text-align:center;">
+      <button>提交</button>
+    </div>
+  </div>
+</body>
+<script>
+  var ueAttribute = UE.getEditor('editor-attribute');
+  var ueDesc = UE.getEditor('editor-description');
+</script>
+</html>

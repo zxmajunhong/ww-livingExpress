@@ -1,11 +1,9 @@
 $(function(){
   //详情页图片轮播
-  $('.big-img').slide({
+  $('.left-img').slide({
     mainCell: '.img-list',
-    targetCell: '.left-img .hd',
+    titCell: '.hd',
     autoPage: true,
-    effect: 'left',
-    autoPlay: true,
-    vis: 1
+    effect: 'left'
   })
 })
