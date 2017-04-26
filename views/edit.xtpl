@@ -73,7 +73,7 @@
 </head>
 <body>
   <div class="width-1180">
-    <h1>编辑产品列表</h1>
+    <h1>编辑产品列表&nbsp;&nbsp;{{pid}}</h1>
     <label class="line">
       <span class="title">选择类别：</span>
       <div class="right-content">
@@ -100,7 +100,7 @@
     <label class="line">
       <span class="title">选择图片：</span>
       <div class="right-content">
-        <input id="uploadfile" type="file" multiple="multiple">
+        <input id="uploadfile" type="file" multiple="multiple" style="width:200px">
         <button id="uploadsure" type="button">确认上传</button>&nbsp;<span style="color:orangered">选择文件之后需要点击确认上传来完成文件上传</span>
       </div>
     </label>
@@ -127,7 +127,7 @@
       <script id="editor-description" type="text/plain" style="width:800px;height:400px;float:left"></script>
     </label>
     <div class="btn-box" style="text-align:center;">
-      <button>提交</button>
+      <button id="btn-submit">提交</button>
     </div>
   </div>
 </body>
@@ -169,6 +169,50 @@
             });
             $('.img-list').append(html);
           }
+        }
+      });
+    });
+
+    //提交数据
+    $('#btn-submit').click(function(){
+      if($('#ipt-name').val() == ''){
+        alert('请输入产品名称');
+        return;
+      }
+      if($('#ipt-price').val() == ''){
+        alert('请输入产品价格');
+        return;
+      }
+      if(ueAttribute.getContent() == ''){
+        alert('请输入产品属性');
+        return;
+      }
+      if(ueDesc.getContent() == ''){
+        alert('请输入产品描述');
+        return;
+      }
+      //获取图片路径集合
+      var imgurl = [];
+      var saveData = {}; //待保存的数据
+      saveData.itemType = $("#item-type option:selected").val(); //产品类别
+      $('.u-img').each(function(i){
+        var _this = $(this);
+        imgurl.push(_this.find('img').attr('src'));
+      });
+      saveData.url = $('.u-img input[name="img"]:checked').siblings('img').attr('src') || ''; //列表图片
+      saveData.name = $.trim($('#ipt-name').val()); //产品名称
+      saveData.price = $.trim($('#ipt-price').val()); //产品价格
+      saveData.imgList = imgurl; //详情页的图片集合
+      saveData.attribute = ueAttribute.getContent();
+      saveData.description = ueDesc.getContent();
+      $.ajax({
+        type: 'post',
+        url: '/editsave',
+        data: {
+          params: JSON.stringify(saveData)
+        },
+        success:function(data){
+          console.log(data);
         }
       })
     });
