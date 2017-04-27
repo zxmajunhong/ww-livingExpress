@@ -212,7 +212,8 @@
           params: JSON.stringify(saveData)
         },
         success:function(data){
-          console.log(data);
+          alert(data.msg);
+          window.location.reload();
         }
       })
     });
